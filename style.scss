@@ -1,0 +1,568 @@
+
+$playfair: 'Playfair Display', serif;
+$raleway: 'Raleway', sans-serif;
+$dancing: 'Dancing Script', cursive;
+
+
+*{
+  outline: none;
+}
+
+body{
+  font-family: $raleway;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+//===========MOBILE MENU ============
+#mobile{
+  width: 100%;
+  text-align: right;
+
+  #toggle{
+    padding: 10px;
+  }
+
+  span{
+    display: none;
+  }
+
+  ul{
+    display: flex;
+    flex-direction: column-reverse;
+    list-style: none;
+  }
+
+  a{
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 25px 0;
+    color: black;
+    font-family: $playfair;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+//========SMALL DEVICE===========
+h3{
+  font-family: $playfair;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 2%;
+  color: #5a5957;
+}
+
+h3:after{
+  content: ' ';
+  max-width: 60px;
+  background: #840707;
+  display: block;
+  margin: .5% auto;
+  width: 100%;
+  height: 3px;
+}
+
+
+  .header {
+    background-image: url('img/header.jpg');
+    width: 100%;
+    background-size: 100% 100%;
+    text-align: center;
+    overflow: auto;
+
+    h2:first-of-type {
+      font-family: $dancing;
+      font-size: 27px;
+      color: white;
+      padding-top: 5%;
+    }
+
+    h1,
+    h2{
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-family: $dancing;
+      color: white;
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-family: $playfair;
+      font-size: 29px;
+      color: white;
+      padding-top: 8%;
+      position: relative;
+      text-align: center;
+
+        &:after{
+          content: ' ';
+          display: block;
+          width: 100%;
+          max-width: 10%;
+          background: white;
+          height: 3px;
+          margin: 2% auto;
+        }
+    }
+
+
+    p {
+      font-size: 15px;
+      color: white;
+      margin: 2% 10% 0 10%;
+      padding-bottom: 15%;
+    }
+
+    i {
+      color: white;
+      padding-bottom: 2%;
+    }
+  }
+
+  nav{
+    width: 100%;
+    text-align: right;
+    border: none;
+
+    i{
+      padding-top: 20px;
+    }
+
+    ul{
+      display: none;
+    }
+  }
+
+  #about{
+    text-align: center;
+
+      p{
+        font-size:  18px;
+        padding: 0 5%;
+      }
+  }
+
+  #work{
+    text-align: center;
+    margin-top: 9%;
+
+    .gallery > img {
+      display: block;
+      width: 85%;
+      margin: auto;
+      padding: 1%;
+    }
+
+
+    a.load{
+      color: white;
+      background: #d07c7c;
+      border: 4px double #d07c7c;
+      text-transform: uppercase;
+      font-size: 18px;
+      padding: 15px 35px;
+
+        &:hover{
+          background: inherit;
+          color: black;
+        }
+    }
+
+  }
+#see-world{
+  text-align: center;
+
+  p{
+    font-size:  18px;
+    padding: 0 5%;
+  }
+
+  span{
+    color: grey;
+    font-size: 13px;
+  }
+
+  .squares{
+    margin: auto;
+  }
+
+  .sqr{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    display: inline-block;
+    margin: 20px 5px;
+    cursor: pointer;
+  }
+}
+
+#follow{
+  text-align: center;
+
+  i{
+    margin: 10px;
+    padding: 10px;
+    color: #848282;
+    font-size: 24px;
+    border: 10px double transparent;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    transition: .2s ease-in-out;
+    border-radius: 50%;
+
+      &:hover{
+        background: #d07c7c;
+        border: 10px double white;
+        color: white;
+      }
+  }
+
+}
+
+#contact {
+  background-image: url('img/arhitecture-contact.jpg');
+  width: 100%;
+  background-size: 100% 100%;
+  text-align: center;
+  overflow: auto;
+  margin-top: 100px;
+
+  h3 {
+    margin-top: 1%;
+  }
+
+  input,
+  textarea {
+    display: block;
+    margin: 20px auto;
+    line-height: 30px;
+    padding: 1%;
+    border: 2px solid #d07c7c;
+    width: 70%;
+  }
+
+  button {
+    color: white;
+    background: #d07c7c;
+    border: 4px double #d07c7c;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 15px 35px;
+    margin: 15px;
+
+    &:hover {
+      background: inherit;
+      color: black;
+    }
+  }
+}
+  footer{
+    text-align: center;
+
+    i{
+      color: black;
+      padding: 10px;
+    }
+
+    span{
+      font-family: $dancing;
+      font-size: 15px;
+      padding-top: .5%;
+      display: block;
+    }
+
+    span:first-of-type{
+      font-size: 22px;
+    }
+
+    p{
+      font-size: 11px;
+    }
+
+  }
+
+
+
+
+  //=============MEDIUM DEVICES==============
+@media screen and (min-width: 610px) and (max-width: 940px) {
+
+  body {
+    padding: 1.5%;
+  }
+
+  .header {
+    #toggle {
+      display: none;
+    }
+
+    h2:first-of-type {
+      font-size: 29px;
+      padding-top: 7%;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 40px;
+      padding-top: 8%;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 0 20%;
+      padding-bottom: 15%;
+    }
+  }
+    nav {
+      width: 100%;
+      padding: 0;
+      border-bottom: 1px solid grey;
+      position: relative;
+
+      span {
+        display: none;
+      }
+
+      ul {
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        display: inline-block;
+        float: right;
+      }
+
+      a {
+        color: black;
+        padding: 9px;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+    }
+
+    #about {
+      text-align: center;
+      clear: both;
+
+      p {
+        font-size: 18px;
+        padding: 0 15%;
+      }
+    }
+
+  #work{
+    a{
+      margin-top: 60px;
+    }
+  }
+  #see-world{
+    p{
+      font-size: 18px;
+      padding: 0 15%;
+    }
+  }
+  }
+
+
+//=============large devices=============
+@media screen and (min-width: 941px) {
+  h3 {
+    padding: 10% 0 2% 0;
+  }
+
+  body {
+    padding: .5%;
+  }
+
+  .header {
+    text-align: center;
+    overflow: hidden;
+
+    #toggle {
+      display: none;
+    }
+
+    h2:first-of-type {
+      font-size: 35px;
+      padding-top: 5%;
+    }
+
+    h2 {
+      font-size: 27px;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 50px;
+      padding-top: 5%;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 5% 25%;
+      padding-bottom: 15%;
+    }
+  }
+
+  nav {
+    width: 100%;
+    padding: 0;
+    border-bottom: 1px solid grey;
+    position: relative;
+
+    .logo {
+      position: absolute;
+      left: 0;
+      font-family: $dancing;
+    }
+
+    ul {
+      display: inline-block;
+      list-style: none;
+      padding: 10px;
+    }
+
+    li {
+      display: inline-block;
+      float: right;
+    }
+
+    a {
+      text-transform: uppercase;
+      color: black;
+      padding: 10px;
+      font-size: 16px;
+      border-bottom: 2px solid transparent;
+
+      &:hover {
+        border-bottom: 2px solid #840707;
+      }
+    }
+
+  }
+
+  #about {
+   margin: auto;
+
+    p {
+      font-size: 16px;
+      padding: 0 20%;
+    }
+  }
+
+  #work{
+
+    *{
+      box-sizing: border-box;
+    }
+
+    img{
+      padding: 5px;
+      width: inherit;
+      height: inherit;
+
+    }
+
+    .gallery{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .pic-row{
+      width: 100%;
+    }
+
+    .small{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .left{
+      width: 770px;
+      font-size: 0;
+    }
+
+    .right{
+      width: 440px;
+      height: 758px;
+    }
+
+    .nature {
+      width: 100%;
+    }
+
+    .architect{
+      width: 100%;
+    }
+
+    .urban{
+      width: 100%;
+      height: 753px;
+    }
+
+    .animals{
+      height: 377px;
+      width: 100%;
+    }
+
+    a{
+      margin: 20px auto;
+      display: block;
+      width: 230px;
+    }
+    }
+
+  #see-world{
+    font-size: 16px;
+    padding: 0 20%;
+  }
+
+  #contact{
+
+    h3{
+      padding: 2%;
+    }
+
+    p{
+      font-size: 14px;
+      color: #848282;
+    }
+
+    input,
+    textarea{
+      width: 50%;
+    }
+
+  }
+  }
+
+
+
+
