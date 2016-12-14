@@ -105,16 +105,18 @@ nav {
   margin-top: 9%; }
   #work .gallery img {
     display: block;
-    width: 85%;
-    margin: auto;
-    padding: 1%; }
+    width: 90%;
+    padding: .5%;
+    margin: 0 auto; }
   #work a.load {
+    display: inline-block;
     color: white;
     background: #d07c7c;
     border: 4px double #d07c7c;
     text-transform: uppercase;
     font-size: 18px;
-    padding: 15px 35px; }
+    padding: 15px 35px;
+    margin: 4%; }
     #work a.load:hover {
       background: inherit;
       color: black; }
@@ -247,6 +249,16 @@ footer {
       font-size: 18px;
       padding: 0 15%; }
 
+  #work img {
+    width: 100% !important;
+    padding: .5%; }
+  #work .small {
+    width: 760px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  #work .left {
+    width: 760px; }
   #work a {
     margin-top: 60px; }
 
@@ -310,43 +322,48 @@ footer {
       font-size: 16px;
       padding: 0 20%; }
 
-  #work * {
-    box-sizing: border-box; }
-  #work img {
-    padding: 5px;
-    width: inherit;
-    height: inherit; }
-  #work .gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; }
-  #work .pic-row {
-    width: 100%; }
-  #work .small {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-  #work .left {
-    width: 770px;
-    font-size: 0; }
-  #work .right {
-    width: 440px;
-    height: 758px; }
-  #work .nature {
-    width: 100%; }
-  #work .architect {
-    width: 100%; }
-  #work .urban {
-    width: 100%;
-    height: 753px; }
-  #work .animals {
-    height: 377px;
-    width: 100%; }
-  #work a {
-    margin: 20px auto;
-    display: block;
-    width: 230px; }
+  #work {
+    margin-bottom: 5%; }
+    #work * {
+      box-sizing: border-box; }
+    #work img {
+      padding: 5px;
+      width: 100% !important;
+      height: auto;
+      display: flex;
+      margin: 1px; }
+    #work .gallery {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
+    #work .pic-row {
+      width: 100%; }
+    #work .small {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-shrink: 1; }
+    #work .left {
+      width: 760px;
+      font-size: 0; }
+    #work .right {
+      width: 440px;
+      height: 758px; }
+    #work .nature {
+      width: 100%; }
+    #work .architect {
+      width: 100%; }
+    #work .urban {
+      width: 100%;
+      height: 753px; }
+    #work .animals {
+      height: 377px;
+      width: 100%; }
+    #work a {
+      margin: 20px auto;
+      display: block;
+      width: 230px; }
 
   #see-world {
     font-size: 16px;
